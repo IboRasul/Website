@@ -1,0 +1,139 @@
+section#IboRasul {
+    background: url('aboutmeback.jpg') no-repeat center center/cover;
+	height: 100vh;
+}
+
+html{
+	scroll-behavior: smooth;
+
+}
+
+.img1{
+	background-size: cover;
+}
+
+section#AboutMe {
+	background: linear-gradient(-55deg, grey, #e73c7e, #23a6d5, blue);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	position: relative;
+	z-index: -1;
+	top: -500px;
+	height: 500px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/*  */
+/*  */
+.ibo{
+
+    position: relative;
+    top: 25px;
+	text-align: center;
+	justify-content: center;
+	
+}
+.iboProjects{
+
+    
+    position: relative;
+    top: 550px;
+
+}
+
+.iboibo{
+    position: relative;
+    top: 100px;
+}
+
+
+
+
+
+
+body {
+	cursor: url("https://s.electerious.com/images/codepen/cursor.svg") 3 3, auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1em 0;
+  }
+  
+  .cursor {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: var(--width);
+	height: var(--height);
+	transform: translate(calc(var(--x) - var(--width) / 2), calc(var(--y) - var(--height) / 2));
+	transition-duration: 0.1s;
+	transition-timing-function: cubic-bezier(0.25, 0.25, 0.42, 1);
+	transition-property: width, height, transform;
+	z-index: 1;
+	pointer-events: none;
+	will-change: transform;
+  }
+  @media (pointer: fine) {
+	.cursor {
+	  display: block;
+	}
+  }
+  .cursor::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: var(--radius);
+	border: 2px solid #34b288;
+	opacity: var(--scale);
+	transform: scale(var(--scale));
+	transition: 0.3s cubic-bezier(0.25, 0.25, 0.42, 1) opacity, 0.3s cubic-bezier(0.25, 0.25, 0.42, 1) transform, 0.1s cubic-bezier(0.25, 0.25, 0.42, 1) border-radius;
+  }
+  
+  body:not(body:hover) .cursor::after {
+	opacity: 0;
+	transform: scale(0);
+  }
+  
+  .link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 1em;
+	width: var(--size);
+	height: var(--size);
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 100%;
+  }
+  
+  .button {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	border: none;
+	color: white;
+	cursor: inherit;
+	padding: 0.5em 1em;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 5px;
+  }
