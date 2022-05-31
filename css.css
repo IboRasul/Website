@@ -13,9 +13,9 @@ html{
 }
 
 section#AboutMe {
-	background: linear-gradient(-55deg, #23a6d5, rgb(43, 216, 155), rgb(221, 0, 255), #e73c7e);
+	background: linear-gradient(350deg,rgb(221, 0, 255), #23a6d5,rgb(43, 216, 155), rgb(30, 167, 64),rgb(12, 51, 63));
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	animation: gradient 15s ease infinite;
 	position: relative;	
 	top: 0px;
 	height: 450px;
