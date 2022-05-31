@@ -54,3 +54,4 @@ document.querySelectorAll('.cursor').forEach((cursor) => {
 	})
 
 })
+console.log("Special Thanks to my friend Daniel Othman for being with me and helping me design the website");
